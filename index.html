@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>API Using Express</title>
+	</head>
+	<body>
+		<div class="products">
+			<h1>Products Display</h1>
+			<form id="post-form" method="PUT" style="border: 1px solid black; padding: 5px">
+				<label for="input">Name:</label>
+				<input id="name" type="text" name="name" />
+				<br />
+				<br />
+				<label for="input">Price:</label>
+				<input id="price" type="text" name="price" />
+				<br /><br />
+				<button id="post-data" type="submit">Add Data</button>
+			</form>
+			<br />
+			<button id="fetch-products">Fetch Data</button>
+			<br />
+			<br />
+			<table style="border: 1px solid black; width: 50%; border-collapse: collapse; text-align: center">
+				<thead>
+					<tr style="border: 1px solid black">
+						<th style="border: 1px solid black">ID</th>
+						<th style="border: 1px solid black">Name</th>
+						<th style="border: 1px solid black">Price</th>
+					</tr>
+				</thead>
+				<tbody id="products-table" style="border: 1px solid black"></tbody>
+			</table>
+			<br />
+			<button id="prev-products">Previous</button>
+			<button id="next-products">Next</button>
+			<br /><br />
+			<label id="prod-id"></label>
+			<input id="post-prod-id" type="text" name="prod-id" />
+			<button id="prod-id-btn">Get Product</button>
+			<button id="prod-id-btn">Delete Product</button>
+			<div id="data"></div>
+		</div>
+		<br />
+		<hr />
+		<div class="users">
+			<h1>Users Display</h1>
+			<label for="username" id="user-label"></label>
+			<input type="text" id="user-input" name="username" />
+			<table>
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Full Name</th>
+						<th>Age</th>
+						<th>Gender</th>
+					</tr>
+				</thead>
+				<tbody id="users-table"></tbody>
+			</table>
+			<button id="prev-users">Previous</button>
+			<button id="next-users">Next</button>
+			<button id="user-fetch-btn">Fetch Users</button>
+		</div>
+
+		<script type="module" src="./script.js"></script>
+		<script type="module" src="./scripts-users.js"></script>
+	</body>
+</html>
